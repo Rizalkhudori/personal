@@ -140,8 +140,8 @@ nav a {
 /* CONTACT ME STYLES */
 
 .contact-section {
-  height: 90vh;
-  display: flex;
+  height: 50vh;
+
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -152,7 +152,7 @@ nav a {
   width: 400px;
   border: 1px solid gray;
   border-radius: 10px;
-  padding: 30px;
+  padding: 25px;
 }
 
 .form-field {
@@ -261,8 +261,8 @@ nav cghd{
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
-  gap: 10px;
+  /* margin-bottom: 15px; */
+  gap: 1px;
 }
 
 .form-field input,

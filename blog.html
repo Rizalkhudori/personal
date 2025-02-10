@@ -6,53 +6,38 @@
   <title>Personal Web</title>
   <link rel="icon" href="assets/img/icon-dev.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   </head>
     <body>
      <!-- NAVBAR -->
-     <nav>
-      <div class="nav-container">
-        <div class="navbar-left">
-          <a href="#">
-            <img
-              class="web-logo"
-              src="assets/img/icon-dev.png"
-              alt="web logo"
-            />
-          </a>
-          <ul class="navbar-links">
-            <li>
-              <a href="index.html" class="link-active">Home</a>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Bootstrap" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li>
-              <a href="blog.html" class="link">Blog</a>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">blog</a>
             </li>
-            <li>
-              <a href="testimonial.html" class="link">Testimonial</a>
+            <li class="nav-item">
+              <a class="nav-link" href="my project.html">my Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">testimonial</a>
             </li>
           </ul>
-        </div>
-
-        <div class="navbar-right">
-          <a href="contact.html" class="contact-link">Contact Me</a>
-        </div>
-        <div class="hamburger-container">
-          <button
-            type="button"
-            id="hamburgerButton"
-            class="contact-link hamburger-button"
-          >
-            ☰
-          </button>
+         <a class="nav-link" href="contact.html">contact me</a>
         </div>
       </div>
-
-      <ul id="menuList" class="hamburger-menu-list hide-menu">
-        <li>Home</li>
-        <li>Blog</li>
-        <li>Contact Me</li>
-      </ul>
     </nav>
-
+    
     <!-- CREATE BLOG -->
     <form id="create-blog" class="create-blog-form" onsubmit="addBlog(event)">
       <h1>Create Blog</h1>
@@ -97,7 +82,7 @@
           <a href="blog-detail.html" style="text-decoration: none">
             <h1 class="blog-item-title">Pasar Coding di Indonesia</h1>
           </a>
-          <p>30 Jan 2025 11:22 WIB | Alex Josua</p>
+          <p>31 Jan 2025 11:00 WIB | jaja</p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nostrum assumenda, voluptates maiores sequi quisquam pariatur
@@ -114,5 +99,6 @@
     <script src="assets/js/blog.js"></script>
 
     <script src="assets/js/blog.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,98 +1,101 @@
-/* Testimonial styles matching website theme */
-.testimonials {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+:root {
+  --primary-color: #e74343;
+  --secondary-color: rgb(231, 223, 223);
+}
+body {
+  font-family: Poppins;
+  font-size: larger;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+.active {
+  font-weight: bolder;
 }
 
-.testimonials-grid {
-  display: grid;
-  gap: 30px;
-}
-
-/* Style untuk single testimonial */
-.testimonial {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  position: relative;
-}
-
-.testimonial:hover {
-  transform: translateY(-5px);
-}
-
-/* Style untuk foto profil */
-.testimonial__header {
+nav {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  list-style-type: none;
+  padding: 1em 3em;
 }
-
-.testimonial__image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-/* Style untuk informasi profil */
-.testimonial__info {
+nav ul {
+  gap: 10px;
   display: flex;
-  flex-direction: column;
-}
-
-.testimonial__name {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
+  align-items: center;
+  padding: 0;
   margin: 0;
+  list-style-type: none;
+  gap: 40px;
+}
+nav li a {
+  color: black;
 }
 
-.testimonial__title {
-  font-size: 14px;
-  color: #666;
-  margin: 5px 0 0;
+.contactme {
+  border: 1px solid black;
+  padding: 5px 1em;
+  border-radius: 10px;
+  color: white;
+  background-color: #070d0d;
+}
+.contactme:hover {
+  background-color: rgb(223, 84, 84);
+  border: 1px solid rgb(180, 35, 35);
 }
 
-/* Style untuk konten testimonial */
-.testimonial__content {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-  margin: 0;
+main h1,
+main h3 {
+  text-align: center;
 }
 
-/* Style untuk rating bintang */
-.testimonial__rating {
-  color: #ffd700;
-  font-size: 20px;
-  margin: 10px 0;
+button {
+  justify-content: center;
+  border: 1px solid rgb(187, 49, 33);
+  padding: 5px 1em;
+  border-radius: 10px;
+  color: white;
+  background-color: salmon;
+  font-family: Poppins;
+  cursor: pointer;
 }
-
-/* Style untuk tanda kutip */
-.testimonial::before {
-  content: '"';
-  font-size: 60px;
-  color: #e1e1e1;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-family: serif;
+.star-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-
-/* Responsive design */
-@media (min-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto;
+  gap: 10px;
 }
-
-@media (min-width: 1024px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.testimonials {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(31, 12, 12);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
+.testimonial-list img {
+  width: 100%;
+  border-radius: 10px;
+}
+.testi {
+  color: rgb(245, 75, 75);
+}
+.star {
+  font-weight: bold;
+}
+/* main h1 {
+  text-align: center;
+  background-color: aqua;
+/* } */
