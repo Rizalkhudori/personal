@@ -1,0 +1,27 @@
+ {{#>layout currentPage="create blog"}}
+ 
+ <!-- CREATE BLOG -->
+    <form id="create-blog" class="create-blog-form" onsubmit="addBlog(event)">
+      <h1>Create Blog</h1>
+
+      <div class="form-field">
+        <label for="title">title</label>
+        <input id="title" type="text" required />
+      </div>
+
+      <div class="form-field">
+        <label for="content">content</label>
+        <textarea id="content" rows="6" required></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="image">upload image</label>
+        <input id="image" type="file" required />
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    {{/layout}}

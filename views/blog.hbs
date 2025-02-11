@@ -1,0 +1,33 @@
+{{layout}}
+     {{!-- <hr style="width: 90%; margin: 0 auto" /> --}}
+
+  <!-- BLOG LIST -->
+<section
+      id="blogList"
+      class="blog-list"
+      style="background-color: darkgreen"
+    >
+    {{#each blog}}
+      <article class="blog-item">
+        <div class="blog-item-img">
+          <img src="/img/blog-img.png" alt="" />
+        </div>
+        <div class="blog-item-text">
+          <div class="blog-item-buttons">
+            <button class="blog-edit-button">Edit Blog</button>
+            <button class="blog-post-button">Post Blog</button>
+          </div>
+          <a href="blog-detail" style="text-decoration: none">
+            <h1 class="blog-item-title">{{this.title}}</h1>
+          </a>
+          <p>{{formatDateToWIB this.PostedAt}} | {{this.outhor}}</p>
+          <p>{{this.content}}</p>
+          <p class="blog-item-relative-time">{{getRelativeTime this.PostedAt}}</p>
+        </div>
+      </article>
+      {{/each}}
+    </section>
+    {{!-- <script src="/js/blog.js"></script> --}}
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+{{/layout}}

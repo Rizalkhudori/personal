@@ -13,7 +13,7 @@ function addBlog(event) {
     title: title,
     content: content,
     image: imageFileName,
-    author: "Leo G",
+    author: "rizal khudori",
     postedAt: new Date(),
   };
   blogs.push(newBlog);
