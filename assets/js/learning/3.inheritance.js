@@ -3,16 +3,16 @@ class Animal {
   legs = 0;
   name = "unknown name";
 
-  // method
   sleep() {
     console.log(`${this.name} is sleeping`);
+    console.log(`${this.name} has ${this.legs} legs`);
   }
 }
 
 class Human extends Animal {
-  legs = 4;
+  name = "Leo"; // menimpa properti yang ada di animal, diganti
+  legs = 2;
   eyesCount = 2;
-  name = "Leo"; // override atau di timpa
 }
 
 class Pet extends Animal {
@@ -21,24 +21,19 @@ class Pet extends Animal {
 }
 
 class Cat extends Pet {
-  fleas = 4;
+  fleas = 5;
 }
 
 class Dog extends Pet {
   fleas = 8;
 }
 
+const leo = new Human();
+leo.sleep();
+console.log(leo.eyesCount);
+
 const kitty = new Cat();
-console.log(kitty.brain);
+console.log(kitty.fleas);
 
 const breno = new Dog();
-breno.name = "Breno";
-console.log(breno.name);
-
-// const unknownAnimal = new Animal();
-// console.log(unknownAnimal.legs);
-
-// const leo = new Human();
-// const paste = new Human();
-// // console.log(leo.brain);
-// paste.sleep();
+console.log(breno.fleas);

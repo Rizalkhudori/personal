@@ -13,7 +13,7 @@ function addBlog(event) {
     title: title,
     content: content,
     image: imageFileName,
-    author: "rizal khudori",
+    author: "Leo G",
     postedAt: new Date(),
   };
   blogs.push(newBlog);
@@ -63,7 +63,7 @@ function firstBlogContent() {
   return `
         <article class="blog-item">
             <div class="blog-item-img">
-                <img src="assets/img/blog-img.png" alt="">
+                <img src="/img/blog-img.png" alt="">
             </div>
             <div class="blog-item-text">
                 <div class="blog-item-buttons">

@@ -1,12 +1,12 @@
 class Animal {
   speak() {
-    console.log("Please define either 'Duck' or 'Cat' to speak!");
+    console.log("Please define either 'Duck' or 'Cat' to speak");
   }
 }
 
 class Duck extends Animal {
   speak() {
-    console.log("Qwack!");
+    console.log("Quack!");
   }
 }
 
@@ -16,8 +16,11 @@ class Cat extends Animal {
   }
 }
 
-const duck = new Duck();
-duck.speak();
+const donald = new Duck();
+donald.speak();
 
-const cat = new Cat();
-cat.speak();
+const tom = new Cat();
+tom.speak();
+
+const hewan = new Animal();
+hewan.speak();

@@ -8,26 +8,26 @@ class Phone {
   }
 
   connectWifi() {
-    // logic untuk connect ke wifi
-    if (this.signal > 50 && this.battery > 5) {
-      this.wifiConnectSuccess();
+    console.log("this phone has signal :", this.signal);
+    console.log("this phone has battery :", this.battery);
+    if (this.signal > 50 && this.battery > 20) {
+      this.successConnect();
     } else {
-      this.wifiConnectFail();
+      this.failedConnect();
     }
   }
 
-  wifiConnectSuccess() {
-    // logic connect sukses
-    console.log("connect success to wifi");
+  successConnect() {
+    console.log("success connect");
   }
 
-  wifiConnectFail() {
+  failedConnect() {
     console.log("failed to connect");
   }
 }
 
-const iphone = new Phone("IPhone 16 Pro");
-iphone.signal = 45;
-iphone.battery = 40;
-console.log(iphone.name);
+const iphone = new Phone("Iphone 15");
+iphone.signal = 60;
+iphone.battery = 80;
+
 iphone.connectWifi();

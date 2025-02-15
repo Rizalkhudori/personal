@@ -1,0 +1,40 @@
+{{#> layout currentPage="Blog"}}
+
+<!-- BLOG LIST -->
+<main>
+  <h1 style="text-align: center; margin-top: 30px;">My Blogs</h1>
+  <div style="width: 90%; margin: 10px auto; text-align: right;">
+    <a href="/blog-create" class="blog-post-button">Create Blog</a>
+  </div>
+  <section id="blogList" class="blog-list">
+    {{#each blogs}}
+    <article class="blog-item">
+      <div class="blog-item-img">
+        <img src="{{this.image}}" alt="" />
+      </div>
+      <div class="blog-item-text">
+        <div class="blog-item-buttons">
+          <a href="/blog-edit/{{@index}}" class="btn btn-primary">Edit Blog</a>
+          <form style="display: inline;" action="/blog/{{@index}}?_method=DELETE" method="post">
+            <button onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger"
+              type="submit">Delete Blog</button>
+          </form>
+        </div>
+        <a href="/blog/{{@index}}" style="text-decoration: none">
+          <h1 class="blog-item-title">{{this.title}}</h1>
+        </a>
+        <p>{{formatDateToWIB this.postedAt}} | {{this.author}}</p>
+        <p>
+          {{this.content}}
+        </p>
+        <p class="blog-item-relative-time">{{getRelativeTime this.postedAt}}</p>
+      </div>
+    </article>
+    {{/each}}
+  </section>
+</main>
+
+{{!--
+<script src="/js/blog.js"></script> --}}
+
+{{/layout}}

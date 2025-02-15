@@ -1,9 +1,9 @@
 class BankAccount {
-  #balance = 0;
+  #balance = 100;
 
   deposit(amount) {
-    // if (amount > 0) this.balance = this.balance + amount
-    if (amount > 0) this.#balance += amount;
+    // this.#balance = this.#balance + amount;
+    this.#balance += amount;
   }
 
   getBalance() {
@@ -12,11 +12,10 @@ class BankAccount {
 }
 
 const accountBCA = new BankAccount();
+console.log(accountBCA.getBalance());
 
-console.log(`saldo awal ${accountBCA.getBalance()}`); // belum di isi saldo
+accountBCA.deposit(800);
+console.log(accountBCA.getBalance());
 
-accountBCA.deposit(100); // top up saldo ✅✅✅
-console.log(`saldo setelah di top up ${accountBCA.getBalance()}`); // sudah di isi saldo
-
-// accountBCA.#balance = 500000; // override saldo ❌❌❌
-console.log(`saldo setelah di hack ${accountBCA.getBalance()}`);
+accountBCA.deposit(600);
+console.log(accountBCA.getBalance());

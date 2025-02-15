@@ -1,5 +1,4 @@
 class Dog {
-  // PascalCase
   // properties
   name = "";
   color = "";
@@ -8,7 +7,7 @@ class Dog {
   length = 0;
   weight = 0;
 
-  // methods
+  // method
   sit() {
     console.log("Dog is sitting");
   }
@@ -16,14 +15,4 @@ class Dog {
   layDown() {
     console.log("Dog is laying down");
   }
-
-  shake() {
-    console.log("Dog is shaking hands");
-  }
-
-  come() {
-    console.log("Dog is coming");
-  }
 }
-
-console.log(typeof Dog);

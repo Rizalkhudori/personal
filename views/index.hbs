@@ -1,110 +1,98 @@
-{{#> layout}}
-    <main class="home-page">
-      <!-- Card Component -->
-       <section class="profile-section"> 
-        <div id="profileCard">
-          <img
-            src="/img/coding.jpg"
-            style="width: 100%; border-radius: 15px"
-          />
+{{#> layout currentPage='Home'}}
+<main class="main-content">
+  <!-- PROFILE CARD -->
+  <section id="card-section">
+    <div class="profile-card">
+      <img class="profile-img" src="/img/profile-picture.jpg" />
 
-          <h1>rizal khudori</h1>
+      <h1 style="color: blue">Karunia Leo</h1>
 
-          <p class="paragraph-1" style="color: darkcyan; margin-bottom: 30px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic, placeat exercitationem vel qui quod molestiae nam? Aspernatur sed, ratione obcaecati totam nihil magnam repudiandae aperiam eius error consectetur voluptates!.
-          </p>
+      <p style="color: gray">
+        There are many variations of passages of Lorem Ipsum available, but
+        the majority have suffered alteration in some form, by injected
+        humour.
+      </p>
 
-          <p class="paragraph-2" style="color: darkcyan; margin-bottom: 30px">
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptatibus velit, odit accusantium maxime aliquid repudiandae animi, eaque deserunt ut error placeat corporis autem iste harum recusandae dolorum voluptate fugit..
-          </p>
+      <table class="table table-striped table-hover">
+        <tr>
+          <th scope="col">Experience</th>
+          <th scope="col">Year</th>
+        </tr>
+        <tr>
+          <td>Develop Personal Website</td>
+          <td>2025</td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
-          <table
-            style="
-              border: 1.5px solid #a8a8a8;
-              box-shadow: 0 0 4px #a8a8a8;
+  <!-- INTRODUCTION SECTION -->
+  <section id="introduction">
+    <div id="what-i-do">
+      <h1>What I can do for you?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        quibusdam vitae deserunt aperiam qui fugiat recusandae amet illum
+        distinctio at repellat debitis minus similique ex libero veniam
+        reiciendis soluta, nisi quos perspiciatis. Eligendi suscipit enim
+        nesciunt animi? Quidem impedit voluptatum adipisci culpa veniam
+        repellendus doloremque dolorum pariatur aliquid eaque laudantium,
+        illum architecto ipsam delectus dignissimos aliquam fugit totam
+        praesentium hic nesciunt?
+      </p>
+    </div>
 
-              border-collapse: collapse;
-              width: 100%;
-            "
-          >
-            <tr>
-              <th style="border: 1px solid #a8a8a8">Experience</th>
-              <th style="border: 1px solid #a8a8a8">Year</th>
-            </tr>
-            <tr style="text-align: center">
-              <td style="border: 1px solid #a8a8a8">Personal Web</td>
-              <td style="border: 1px solid #a8a8a8">2024</td>
-            </tr>
-            <tr style="text-align: center">
-              <td style="border: 1px solid #a8a8a8">Mobile Application</td>
-              <td style="border: 1px solid #a8a8a8">2024</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section
-        class="about-section"
-      >
-        <h2>About Me</h2>
-  
+    <!-- technologies -->
+    <div id="technologies">
+      <div id="frontend">
+        <img src="/img/js.png" alt="" />
+        <h2>Frontend Developer</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error modi laudantium veritatis aspernatur quis perspiciatis. Odio blanditiis obcaecati ex architecto velit eos consectetur nobis distinctio voluptatem illo quidem officiis maiores libero accusantium, laudantium corporis. Ut eius soluta deleniti quasi magni modi, distinctio repudiandae saepe exercitationem quod dolores nam id adipisci nostrum tempore unde assumenda doloribus aperiam! Reprehenderit sequi dolorum cum voluptatibus saepe? Sequi nihil, et molestias, blanditiis quo sint architecto eos nostrum cumque consectetur in, quas a alias. Accusantium dolor soluta minus sint provident unde repudiandae eius perspiciatis dolores nisi dolorum velit harum iusto, non officia dolorem repellendus eaque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          modi tempore cupiditate enim doloremque voluptates.
         </p>
+      </div>
+      <div id="version-control">
+        <img src="/img/git.png" alt="" />
+        <h2>Version Control</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          itaque aut asperiores eligendi vero, autem voluptate sed pariatur
+          doloribus voluptates ex dolor.
+        </p>
+      </div>
+      <div id="automated-deployment">
+        <img src="/img/deploy.png" alt="" />
+        <h2>Automated Deployment</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequuntur omnis maxime illum quae rem vitae incidunt inventore
+          ratione.
+        </p>
+      </div>
+    </div>
 
-        <div style="width: 200px">
-          <h2
-            style="
-              background: linear-gradient(to right, red, blue);
-              background-clip: text;
-              color: transparent;
-            "
-          >
-            My skill
-          </h2>
-        </div>
-        <div id="teknoligis">
-          <div id="js">
-            <img src="/img/js.png" alt="">
-            <h2>Frontend Developer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est sapiente quod fugit consectetur repellendus nesciunt dolorum quas optio quasi enim.</p>
-          </div>
-          <div id="vc">
-            <img src="/img/git.png" alt="">
-            <h2>Version Control</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias sapiente vero magni corrupti suscipit earum amet harum accusantium reiciendis?.</p>
-          </div>
-          <div id="ad">
-            <img src="/img/deploy.png" alt="">
-            <h2>Automated Deployment</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ea repellat rerum! Earum, sunt.</p>
-          </div>
-        </div>
-
-        <!-- sosial -->
-         <div id="sosial">
-          <h2>find me on</h2>
-          <dir>
-            <a href="">
-              <img src="assets/img/facebook.png" alt="">
-            </a>
-            <a href="">
-              <img src="/img/twitter.png" alt="">
-            </a>
-            <a href="">
-              <img src="/img/instagram.png" alt="">
-            </a>
-            <a href="">
-              <img src="/img/mail.png" alt="">
-            </a>
-            <a href="">
-              <img src="/img/whatsapp.png" alt="">
-            </a>
-          </dir>
-         </div>
-      </section> 
-    </main>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/button.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-{{/layout}} 
+    <!-- socials -->
+    <div id="socials">
+      <h2>Find Me On</h2>
+      <div>
+        <a href="https://web.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzM5NTE2ODEyLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">
+          <img src="/img/facebook.png" alt="" />
+        </a>
+        <a href="https://x.com/KhudoriRizal">
+          <img src="/img/twitter.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/rizalkhudorii/?next=%2F">
+          <img src="/img/instagram.png" alt="" />
+        </a>
+        <a href="https://accounts.google.com/b/0/AddMailService">
+          <img src="/img/mail.png" alt="" />
+        </a>
+        <a href="https://web.whatsapp.com/">
+          <img src="/img/whatsapp.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+{{/layout}}
